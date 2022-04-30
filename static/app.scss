@@ -1,0 +1,13 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+
+@import "nav";
+@import "intro";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;900&family=Signika+Negative:wght@300;400;500&display=swap');
+@import "List";

@@ -1,0 +1,104 @@
+.list-page-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .list-element-container{
+        padding:50px 0;
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            color:rgb(27, 119, 81);
+        }
+        form{
+            width:25%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px;
+            input{
+                width: 78%;
+                font-size: 2vmin;
+                padding: 5px;
+                height: 40px;
+                border-style: none;
+                border-bottom: 1px solid rgb(200, 200, 200);
+            }
+            input:focus{
+                outline: none;
+                animation: underline 0.5s;
+                border-bottom: 1px solid rgb(43, 187, 127);
+            }
+            @keyframes underline {
+                0%{
+                    width: 0%;
+                    border-bottom: 1px solid rgb(43, 187, 127);
+                }
+                100%{
+                    width: 78%;
+                    border-bottom: 1px solid rgb(43, 187, 127);
+                }
+            }
+            button{
+                width: 18%;
+                font-size: 2vmin;
+                height: 35px;
+                border-style: none;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+           
+            button:hover{
+                background: rgb(27, 119, 81);
+                color: white;
+            }
+        }
+        .bar{
+            width: 100%;
+            height: 1px;
+            background: rgb(219, 219, 219);
+            margin: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .list-page-main{
+        .list-element-container{
+            width: 90%;
+            form{
+                width:40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    .list-page-main{
+        .list-element-container{
+            width: 90%;
+            form{
+                width:60%;
+            }
+        }
+    }
+}
+@media screen and (max-width:450px) {
+    .list-page-main{
+        .list-element-container{
+            width: 90%;
+            form{
+                width:80%;
+                flex-direction: column;
+                button{
+                    margin-top:20px;
+                }
+            }
+        }
+    }
+}
+
+@import "TodoItem";

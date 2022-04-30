@@ -1,0 +1,74 @@
+.todo-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .todo-item{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgb(240, 239, 239);
+        padding: 20px 0;
+        color: rgb(27, 119, 81);
+        animation: showup 0.5s;
+        p{
+            font-size: 3vmin;
+            padding: 5px;
+            width: 80%;
+            background: white;
+            word-wrap:break-word ;
+        }
+        .delete-btn{
+            width: 20%;
+            padding:5px;
+            text-align: center;
+            border-left:1px solid rgb(240, 239, 239) ;
+            cursor: pointer;
+            position: relative;
+        }
+        .delete-btn::after{
+            content: "";
+            background: rgba(42, 186, 126, 0.64);
+            position: absolute;
+            top: 0;
+            left:0;
+            width:0;
+            height: 100%;
+        }
+       
+        .delete-btn:hover:after{
+            transition: ease 0.3s;
+            width:100%;
+            z-index: -10;
+        }
+        .delete-btn:hover{
+            color:white;
+        }
+    }
+
+}
+@keyframes showup{
+    0%{
+        transform:translateY(-5px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@keyframes color{
+    0%{
+        background:rgba(240, 239, 239, 0)
+    }
+    100%{
+        background:rgb(240, 239, 239)
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .todo-container{
+        width: 70%;
+    
+    }
+}

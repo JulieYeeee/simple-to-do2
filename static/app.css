@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;900&family=Signika+Negative:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  height: 50px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+nav .inner-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1200px;
+}
+
+nav .inner-nav .logo {
+  width: 50%;
+}
+
+nav .inner-nav .logo a {
+  text-decoration: none;
+  color: #1b7751;
+}
+
+nav .inner-nav .menu-list {
+  width: 50%;
+  text-decoration: none;
+  text-align: end;
+  padding-right: 10px;
+  color: #1b7751;
+  font-weight: 900;
+}
+
+.intro-page-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-page-main .background {
+  background: url("/static/picture/samantha-gades-BlIhVfXbi9s-unsplash.jpg");
+  background-position: 20% 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 70vh;
+  position: relative;
+}
+
+.intro-page-main .background .CTA {
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.intro-page-main .background .CTA p {
+  font-size: 8vmin;
+  color: white;
+}
+
+.intro-page-main .background .CTA .button {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30px;
+  border: 2px solid rgba(27, 119, 81, 0.596);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.intro-page-main .background .CTA .button p {
+  font-size: 4vmin;
+  color: #1b7751;
+  padding: 5px 10px 5px 15px;
+}
+
+.intro-page-main .background .CTA .button .icon {
+  background: rgba(27, 119, 81, 0.596);
+  height: 100%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro-page-main .background .CTA .button .icon p {
+  font-size: 4vmin;
+  color: white;
+}
+
+.intro-page-main .featrure {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  padding-top: 20px;
+}
+
+.intro-page-main .featrure div {
+  width: 33%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 3vmin;
+  color: #1b7751;
+}
+
+.intro-page-main .featrure .f2 {
+  border-left: 1px solid #1b7751;
+  border-right: 1px solid #1b7751;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro-page-main .background {
+    width: 100%;
+  }
+  .intro-page-main .featrure {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .intro-page-main .background {
+    width: 100%;
+    background-position: 40%;
+  }
+  .intro-page-main .featrure {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro-page-main .featrure div {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-top: 1px solid #1b7751;
+    width: 100%;
+  }
+  .intro-page-main .featrure .f2 {
+    border-left: none;
+    border-right: none;
+  }
+  .intro-page-main .featrure .f3 {
+    border-bottom: 1px solid #1b7751;
+  }
+}
+
+.list-page-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-page-main .list-element-container {
+  padding: 50px 0;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-page-main .list-element-container h1 {
+  color: #1b7751;
+}
+
+.list-page-main .list-element-container form {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px;
+}
+
+.list-page-main .list-element-container form input {
+  width: 78%;
+  font-size: 2vmin;
+  padding: 5px;
+  height: 40px;
+  border-style: none;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.list-page-main .list-element-container form input:focus {
+  outline: none;
+  -webkit-animation: underline 0.5s;
+          animation: underline 0.5s;
+  border-bottom: 1px solid #2bbb7f;
+}
+
+@-webkit-keyframes underline {
+  0% {
+    width: 0%;
+    border-bottom: 1px solid #2bbb7f;
+  }
+  100% {
+    width: 78%;
+    border-bottom: 1px solid #2bbb7f;
+  }
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+    border-bottom: 1px solid #2bbb7f;
+  }
+  100% {
+    width: 78%;
+    border-bottom: 1px solid #2bbb7f;
+  }
+}
+
+.list-page-main .list-element-container form button {
+  width: 18%;
+  font-size: 2vmin;
+  height: 35px;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-page-main .list-element-container form button:hover {
+  background: #1b7751;
+  color: white;
+}
+
+.list-page-main .list-element-container .bar {
+  width: 100%;
+  height: 1px;
+  background: #dbdbdb;
+  margin: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .list-page-main .list-element-container {
+    width: 90%;
+  }
+  .list-page-main .list-element-container form {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .list-page-main .list-element-container {
+    width: 90%;
+  }
+  .list-page-main .list-element-container form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .list-page-main .list-element-container {
+    width: 90%;
+  }
+  .list-page-main .list-element-container form {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .list-page-main .list-element-container form button {
+    margin-top: 20px;
+  }
+}
+
+.todo-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-container .todo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #f0efef;
+  padding: 20px 0;
+  color: #1b7751;
+  -webkit-animation: showup 0.5s;
+          animation: showup 0.5s;
+}
+
+.todo-container .todo-item p {
+  font-size: 3vmin;
+  padding: 5px;
+  width: 80%;
+  background: white;
+  word-wrap: break-word;
+}
+
+.todo-container .todo-item .delete-btn {
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  border-left: 1px solid #f0efef;
+  cursor: pointer;
+  position: relative;
+}
+
+.todo-container .todo-item .delete-btn::after {
+  content: "";
+  background: rgba(42, 186, 126, 0.64);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+}
+
+.todo-container .todo-item .delete-btn:hover:after {
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  width: 100%;
+  z-index: -10;
+}
+
+.todo-container .todo-item .delete-btn:hover {
+  color: white;
+}
+
+@-webkit-keyframes showup {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes showup {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes color {
+  0% {
+    background: rgba(240, 239, 239, 0);
+  }
+  100% {
+    background: #f0efef;
+  }
+}
+
+@keyframes color {
+  0% {
+    background: rgba(240, 239, 239, 0);
+  }
+  100% {
+    background: #f0efef;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .todo-container {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=app.css.map */

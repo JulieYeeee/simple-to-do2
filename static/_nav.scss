@@ -1,0 +1,30 @@
+nav{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 50px;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    .inner-nav{
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+        .logo{
+            width: 50%;
+            a{
+                text-decoration: none;
+                color: rgb(27, 119, 81);
+            }
+        }
+        .menu-list{
+            width: 50%;
+            text-decoration: none;
+            text-align: end;
+            padding-right: 10px;
+            color: rgb(27, 119, 81);
+            font-weight: 900;
+        }
+    }
+    
+}

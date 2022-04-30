@@ -1,0 +1,121 @@
+.intro-page-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .background{
+        background:url("/static/picture/samantha-gades-BlIhVfXbi9s-unsplash.jpg") ;
+        background-position: 20% 80%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 1200px;
+        height: 70vh;
+        position: relative;
+        .CTA{
+            transition: ease 0.5s;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left: 50px;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 8vmin;
+                color: white;
+            }
+            .button{
+                background-color: rgb(255, 255, 255);
+                width: fit-content;
+                border-radius: 30px;
+                border:2px solid rgba(27, 119, 81, 0.596);
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                text-decoration: none;
+                p{
+                    font-size: 4vmin;
+                    color: rgb(27, 119, 81);
+                    padding: 5px 10px 5px 15px;
+                }
+
+                .icon{
+                    background: rgba(27, 119, 81, 0.596);
+                    height: 100%;
+                    border-radius: 50%; 
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        font-size: 4vmin;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .featrure{
+        background:white;
+        display: flex;
+        width: 1200px;
+        padding-top: 20px;
+        div{
+            width: 33%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 3vmin;
+            color:rgb(27, 119, 81);
+        }
+        .f2{
+            border-left: 1px solid rgb(27, 119, 81);
+            border-right: 1px solid rgb(27, 119, 81);
+        }
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    .intro-page-main{
+        .background{
+            width: 100%;
+        }
+        .featrure{
+            width: 100%;
+        }
+    
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .intro-page-main{
+        .background{
+            width: 100%;
+            background-position: 40%;
+        }
+        .featrure{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            div{
+                height: fit-content;
+                padding:5px;
+                border-top:1px solid rgb(27, 119, 81);
+
+                width: 100%;
+            }
+            .f2{
+                border-left: none;
+                border-right: none;
+            }
+            .f3{
+                border-bottom:1px solid rgb(27, 119, 81);
+            }
+        }
+    
+    }
+    
+}
