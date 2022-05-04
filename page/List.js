@@ -1,9 +1,10 @@
-import React,{ useState,useEffect } from "react";
+import React,{ useState,useEffect,useRef } from "react";
 import TodoItem from "../components/TodoItem"
 import { firebaseApp } from "../firebase.config";
 import { getFirestore } from "firebase/firestore";
 import { collection, addDoc ,getDocs  } from "firebase/firestore"; 
 import { query, orderBy } from "firebase/firestore";
+
 
 
 
@@ -62,12 +63,13 @@ const List = () =>{
                         id: num,
                     }
                 );
-                console.log("Document written with ID: ", docRef.id);
                 setNotice("");
                 setNum(parseInt(num)+1);
                 setList([...list , { item:item , id:num }]);
-            } catch (e) {
+            } 
+            catch (e) {
                 console.error("Error adding document: ", e);
+                return;
             }
         }
         
