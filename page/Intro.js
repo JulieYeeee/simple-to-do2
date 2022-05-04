@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 const Intro = () =>{
@@ -6,9 +7,9 @@ const Intro = () =>{
             <div className="background">
             <div className="CTA">
                 <p>Simple To-do <br/>立即開始你的清單</p>
-                <a className="button" href="/list">
+                <Link to="/list" className="button" >
                     <p>Try Now</p><div className="icon"><p>→</p></div>
-                </a>
+                </Link>
             </div>
             </div>
             
