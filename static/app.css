@@ -144,7 +144,7 @@ nav .inner-nav .menu-list {
   color: white;
 }
 
-.intro-page-main .featrure {
+.intro-page-main .feature {
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,7 +153,7 @@ nav .inner-nav .menu-list {
   padding-top: 20px;
 }
 
-.intro-page-main .featrure div {
+.intro-page-main .feature div {
   width: 33%;
   height: 100px;
   display: -webkit-box;
@@ -170,7 +170,7 @@ nav .inner-nav .menu-list {
   color: #1b7751;
 }
 
-.intro-page-main .featrure .f2 {
+.intro-page-main .feature .f2 {
   border-left: 1px solid #1b7751;
   border-right: 1px solid #1b7751;
 }
@@ -179,7 +179,7 @@ nav .inner-nav .menu-list {
   .intro-page-main .background {
     width: 100%;
   }
-  .intro-page-main .featrure {
+  .intro-page-main .feature {
     width: 100%;
   }
 }
@@ -189,7 +189,7 @@ nav .inner-nav .menu-list {
     width: 100%;
     background-position: 40%;
   }
-  .intro-page-main .featrure {
+  .intro-page-main .feature {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -199,7 +199,7 @@ nav .inner-nav .menu-list {
         -ms-flex-align: center;
             align-items: center;
   }
-  .intro-page-main .featrure div {
+  .intro-page-main .feature div {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -207,11 +207,11 @@ nav .inner-nav .menu-list {
     border-top: 1px solid #1b7751;
     width: 100%;
   }
-  .intro-page-main .featrure .f2 {
+  .intro-page-main .feature .f2 {
     border-left: none;
     border-right: none;
   }
-  .intro-page-main .featrure .f3 {
+  .intro-page-main .feature .f3 {
     border-bottom: 1px solid #1b7751;
   }
 }

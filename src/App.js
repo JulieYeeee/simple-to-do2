@@ -3,7 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "../components/Nav";
 import Intro from "../page/Intro";
 import List from "../page/List";
-import "../static/app.css"
+import "../static/app.css";
+
+
 
 
 const App = () =>{
