@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import { firebaseApp } from "../firebase.config";
 import { getFirestore,getDocs } from "firebase/firestore";
 import { doc, deleteDoc } from "firebase/firestore";
@@ -29,7 +29,7 @@ const TodoItem = ({ setNotice, setList, list, itemObj }) =>{
             }
 
         }else{
-            setNotice("尚未有待辦事項");;
+            setNotice("尚未有待辦事項");
         }
     }
 
@@ -37,7 +37,7 @@ const TodoItem = ({ setNotice, setList, list, itemObj }) =>{
         //get project db from firestore and get initial to-do list data
         try{
             const db = getFirestore(firebaseApp);
-            let order = query(collection(db, "todolist"),where("id", "==", parseInt(id)));
+            let order = query( collection(db, "todolist") , where("id", "==", parseInt(id)) , limit(1));
             let docs = await getDocs (order);
             let fileName;
             docs.forEach((doc)=>{

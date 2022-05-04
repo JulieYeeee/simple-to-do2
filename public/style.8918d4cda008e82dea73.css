@@ -42,6 +42,7 @@ nav .inner-nav {
 }
 
 nav .inner-nav .logo {
+  padding-left: 10px;
   width: 50%;
 }
 
@@ -325,6 +326,15 @@ nav .inner-nav .menu-list {
   height: 1px;
   background: #dbdbdb;
   margin: 50px;
+}
+
+.list-page-main .list-element-container .loader {
+  background: url(7caf5f281c9f5664f009.gif);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 8%;
+  width: 100%;
+  height: 50px;
 }
 
 @media screen and (max-width: 1000px) {
